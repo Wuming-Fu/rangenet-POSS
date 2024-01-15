@@ -5,8 +5,6 @@ _Examples of segmentation results from [PKU POSS](http://www.poss.pku.edu.cn/dow
 
 ![ptcl](pics/darknet53_vis.gif)
 
-![ptcl](pics/squeezeseg_vis.gif)
-
 
 ## Dataset
 
