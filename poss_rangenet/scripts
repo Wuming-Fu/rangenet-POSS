@@ -1,0 +1,44 @@
+ ./visualize.py -d /root/dataset -s 00
+
+./infer.py -d /root/dataset -l /root/pred_squeezeseg -m /root/train_log_squeezeseg
+
+
+ ./evaluate_iou.py -d /root/dataset -p /root/pred_dartnet53 --split test -dc /root/train_log_darknet53/data_cfg.yaml
+
+
+ ./visualize.py -d /root/dataset -p /root/pred_dartnet53 -s 00
+
+
+
+ /root/kitti_mini/kitti_tiny_3D/testing/velodyne/000000.bin
+
+
+ ./train.py -d /root/dataset -ac /root/cfgs/darknet53.yaml -dc /root/cfgs/data_cfg.yaml -l /root/train_log_darknet53
+
+
+
+Validation set:
+Acc avg 0.733
+IoU avg 0.167
+IoU class 1 [unlabeled_1] = 0.000
+IoU class 2 [unlabeled_2] = 0.000
+IoU class 3 [unlabeled_3] = 0.000
+IoU class 4 [1 person] = 0.233
+IoU class 5 [2+ person] = 0.001
+IoU class 6 [rider] = 0.002
+IoU class 7 [car] = 0.731
+IoU class 8 [trunk] = 0.094
+IoU class 9 [plants] = 0.528
+IoU class 10 [traffic sign 1] = 0.002
+IoU class 11 [traffic sign 2] = 0.008
+IoU class 12 [traffic sign 3] = 0.013
+IoU class 13 [pole] = 0.000
+IoU class 14 [trashcan] = 0.000
+IoU class 15 [building] = 0.599
+IoU class 16 [cone/stone] = 0.021
+IoU class 17 [fence] = 0.204
+IoU class 18 [unlabeled_18] = 0.000
+IoU class 19 [unlabeled_19] = 0.000
+IoU class 20 [unlabeled_20] = 0.000
+IoU class 21 [bike] = 0.519
+IoU class 22 [ground] = 0.716
