@@ -38,7 +38,7 @@ To visualize:
 ./visualize.py -d /root/dataset -p /root/pred_dartnet53 -s 00
 
 ## Result
-![ptcl](pics/IoU_result.png)
+
 
 
 
